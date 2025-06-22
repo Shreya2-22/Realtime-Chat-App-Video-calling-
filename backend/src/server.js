@@ -14,7 +14,7 @@ app.use(express.json()); // Middleware to parse JSON bodies
 
 app.use("/api/auth", authRoutes);
 app.use("api/users", userRoutes);
-app.user('api/chat', chatRoutes);
+app.use('api/chat', chatRoutes);
 
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`);
